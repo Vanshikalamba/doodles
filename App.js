@@ -1,7 +1,11 @@
-const data = React.createElement("div", { id: "parent" }, [
-  React.createElement("h4", { id: "child" }, "Hii , Aliya"),
-  React.createElement("h5", { id: "child2" }, "Hii , Aliya"),
-]);
-console.log(data);
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+//jsx
+const jsxhead = <h1>van jsx</h1>;
+//react functional component(normal js function which returns jsx)
+const headcomponent = () => {
+  return <h3>Fist Component</h3>;
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(data);
+root.render(headcomponent());
